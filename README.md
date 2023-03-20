@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
 
-Things you may want to cover:
+#### 1 RVM (https://rvm.io/)
 
-* Ruby version
+Install RVM like shown in https://rvm.io/rvm/install. Once RVM is installed run 
 
-* System dependencies
+```bash
+$ rvm install 3.1.2
+$ rvm gemset use ruby-3.1.2@corrupted-pigs --create
+```
 
-* Configuration
+#### 2 Bundler
+Change the current directory to the folder where you cloned this repository and make sure the ruby version there is 3.1.2
 
-* Database creation
+```bash
+$ ruby -v
+ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+```
 
-* Database initialization
+Then run 
+```bash
+$ gem install bundle
+$ bundle install
+```
 
-* How to run the test suite
+### Start the server
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the command below which will start the server on port 3000 (default).
+```bash
+$ rails s
+```
 
-* Deployment instructions
-
-* ...
+Then open up a tab on your browser and load http://localhost:3000

@@ -1,5 +1,14 @@
 .container
+  .row.card-group.card-group-smaller
+    h4 Them
+    .col-4 = render 'cards/card', theirs: true
+    .col-4 = render 'cards/card', theirs: true
+    .col-4 = render 'cards/card', theirs: true
+
+  br
+  br
   .row.card-group
-    .col-4 = render 'cards/card', image: '1600px_COLOURBOX20788967.jpg'
-    .col-4 = render 'cards/card', image: 'cute-pig-is-wearing-chinese-clothing-cartoon-mascot-design_129890-840.avif'
-    .col-4 = render 'cards/card', image: 'stock-vector-angry-pig-head-cartoon-character-vector-badge-logo-template-1791497630.jpg'
+    h3 You
+    .col-4 = render 'cards/card', image: 'MASK6.webp'
+    .col-4 = render 'cards/card', image: 'SCHOOL4.webp'
+    .col-4 = render 'cards/card', image: 'WIZARD2.webp'

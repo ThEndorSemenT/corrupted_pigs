@@ -25,3 +25,10 @@
 .card-flip:hover .card-back {
   transform: rotateY(0deg);
 }
+
+
+.card-group-smaller {
+  img {
+    width: 66%;
+  }
+}
